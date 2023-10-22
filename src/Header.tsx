@@ -10,6 +10,7 @@ const styleButton = {
   outline: "none",
   display: "flex",
   alignItems: "center",
+  padding: "0 20px 0 0",
   // marginRight: "40px",
   transition: "ease 0.1s",
   "&:hover": {
@@ -28,9 +29,10 @@ function Header() {
         <Container
           sx={{
             display: "flex",
-
             alignItems: "center",
             height: "60px",
+            margin: "0px auto",
+            maxWidth: "1320px !important",
           }}
         >
           <WifiTetheringIcon
@@ -54,24 +56,32 @@ function Header() {
             <Typography sx={{ fontWeight: "800" }}> Application</Typography>
           </Box>
 
-          <Button sx={styleButton}>
-            {capitalizeFirstLetter("Возможности")}
-            <ExpandMoreIcon style={{ marginRight: "10px" }} />
-          </Button>
-          <Button sx={styleButton}>
-            Решения
-            <ExpandMoreIcon style={{ marginRight: "10px" }} />
-          </Button>
-          <Button sx={styleButton}>
-            Планы
-            <ExpandMoreIcon style={{ marginRight: "10px" }} />
-          </Button>
-          <Button sx={styleButton}>
-            Ресурсы
-            <ExpandMoreIcon style={{ marginRight: "10px" }} />
-          </Button>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Button sx={styleButton}>
+              {capitalizeFirstLetter("Features")}
+              <ExpandMoreIcon />
+            </Button>
+            <Button sx={styleButton}>
+              Solutions
+              <ExpandMoreIcon />
+            </Button>
+            <Button sx={styleButton}>
+              Plans
+              <ExpandMoreIcon />
+            </Button>
+            <Button sx={styleButton}>Pricing</Button>
+            <Button sx={styleButton}>
+              Resources
+              <ExpandMoreIcon />
+            </Button>
+          </Box>
 
-          <Box sx={{ marginLeft: "326px" }}>
+          <Box sx={{ marginLeft: "auto" }}>
             <Button
               sx={{
                 fontFamily: "Playpen Sans",
