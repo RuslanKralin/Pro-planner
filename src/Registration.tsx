@@ -42,7 +42,6 @@ function Registration() {
           </Typography>
           <Box sx={{ display: "flex", gap: "20px" }}>
             <TextField
-              // fullWidth
               variant="outlined"
               placeholder="email"
               sx={{
@@ -63,10 +62,20 @@ function Registration() {
             </Button>
           </Box>
         </Box>
-        <Box>asdasd</Box>
+        <Box
+          sx={{
+            background: `url('//images.ctfassets.net/rz1oowkt5gyp/75rDABL8fyMtNLlUAtBxrg/c5e145977a86c41c47e17c69410c64f7/TrelloUICollage_4x.png?w=540')`,
+            backgroundSize: "cover",
+            width: "640px",
+            height: "540px",
+            // marginLeft: "42px",
+          }}
+        ></Box>
       </Container>
     </Box>
   );
 }
-
+// url("//images.ctfassets.net/rz1oowkt5gyp/6bFuTiN5YQ78rFkHb3aJlo/b608362b08e14f5dec4c4aeea3a3ca72/white-wave-mobile.svg") center bottom -0.5px / 100% 24% no-repeat scroll padding-box border-box, linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto no-repeat scroll padding-box border-box rgb(82, 67, 170)
 export default Registration;
+// ("//images.ctfassets.net/rz1oowkt5gyp/6bFuTiN5YQ78rFkHb3aJlo/b608362b08e14f5dec4c4aeea3a3ca72/white-wave-mobile.svg");
+//images.ctfassets.net/rz1oowkt5gyp/75rDABL8fyMtNLlUAtBxrg/c5e145977a86c41c47e17c69410c64f7/TrelloUICollage_4x.png?w=1080 2x

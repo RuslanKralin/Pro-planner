@@ -26,7 +26,15 @@ function Header() {
 
   return (
     <>
-      <Box sx={{ marginBottom: "5px" }}>
+      <Box
+        sx={{
+          // marginBottom: "5px",
+          position: "sticky",
+          zIndex: "3",
+          top: "0px",
+          backgroundColor: "white",
+        }}
+      >
         <Container
           sx={{
             display: "flex",
@@ -90,7 +98,7 @@ function Header() {
                 fontSize: "1.1rem",
                 borderRadius: "0",
                 textTransform: "inherit",
-                padding: "20px 35px",
+                padding: "15px 35px",
                 color: "white",
                 whiteSpace: "nowrap",
                 backgroundColor: "#172b4d",
