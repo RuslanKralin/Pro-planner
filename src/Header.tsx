@@ -6,6 +6,7 @@ import WifiTetheringIcon from "@mui/icons-material/WifiTethering";
 
 const styleButton = {
   fontFamily: "Playpen Sans",
+  textTransform: "inherit",
   color: "rgb(23, 43, 77)",
   outline: "none",
   display: "flex",
@@ -25,7 +26,7 @@ function Header() {
 
   return (
     <>
-      <Box>
+      <Box sx={{ marginBottom: "5px" }}>
         <Container
           sx={{
             display: "flex",
@@ -85,9 +86,10 @@ function Header() {
             <Button
               sx={{
                 fontFamily: "Playpen Sans",
-                fontWeight: "600",
-                letterSpacing: "1px",
-                wordSpacing: "5px",
+                fontWeight: "500",
+                fontSize: "1.1rem",
+                borderRadius: "0",
+                textTransform: "inherit",
                 padding: "20px 35px",
                 color: "white",
                 whiteSpace: "nowrap",
@@ -101,7 +103,7 @@ function Header() {
                 },
               }}
             >
-              Перейти к доскам
+              Go to your boards
             </Button>
           </Box>
         </Container>
